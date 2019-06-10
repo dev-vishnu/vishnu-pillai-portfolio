@@ -1,0 +1,38 @@
+{
+  "name": "vishnu-pillai-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib ",
+    "watch": "watch 'npm run build' src",
+    "start":"nodemon lib/index.js",
+    "dev": "npm run watch & npm start",
+    "prod": "npm run watch & npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-vishnu/vishnu-pillai-portfolio.git"
+  },
+  "author": "Vishnu Pillai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dev-vishnu/vishnu-pillai-portfolio/issues"
+  },
+  "homepage": "https://github.com/dev-vishnu/vishnu-pillai-portfolio#readme",
+  "dependencies": {
+    "concurrently": "^4.1.0",
+    "ejs": "^2.6.1",
+    "express": "^4.17.1",
+    "nodemon": "^1.19.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "watch": "^1.0.2"
+  }
+}
